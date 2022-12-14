@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import axios from 'axios';
 
-const baseURL = 'http://localhost:5000';
+const baseURL = 'https://contact-manager-api.fly.dev';
 axios.interceptors.request.use(
   (config) => {
     config.url = baseURL + config.url;
